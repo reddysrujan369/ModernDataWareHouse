@@ -1,60 +1,72 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Welcome to the **Data Warehouse and Analytics Project** 🚀  
+This repository showcases a complete end-to-end implementation of a modern data warehouse and analytics solution. Built as a portfolio project, it reflects real-world data engineering practices—from raw data ingestion to analytics-ready datasets—focused on clarity, scalability, and analytical performance.
 
 ---
+
 ## 🏗️ Data Architecture
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+The project is designed using the **Medallion Architecture**, consisting of **Bronze**, **Silver**, and **Gold** layers to ensure clean data flow and separation of responsibilities.
 
+1. **Bronze Layer**  
+   Stores raw data ingested directly from source systems. CSV files from ERP and CRM systems are loaded into a SQL Server database without transformation.
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+2. **Silver Layer**  
+   Handles data cleansing, standardization, and normalization. This layer improves data quality and prepares datasets for analytical use.
+
+3. **Gold Layer**  
+   Contains business-ready data modeled using a star schema, optimized for reporting and analytical queries.
 
 ---
+
 ## 📖 Project Overview
 
-This project involves:
+This project covers the following key components:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+1. **Data Architecture Design**  
+   Implementation of a modern data warehouse using the Medallion Architecture (Bronze, Silver, Gold).
 
+2. **ETL Pipelines**  
+   End-to-end extraction, transformation, and loading processes to move data from source systems into the warehouse.
+
+3. **Data Modeling**  
+   Creation of fact and dimension tables structured for efficient analytics and reporting.
+
+4. **Analytics & Reporting**  
+   SQL-based analysis to generate meaningful insights and support data-driven decision-making.
 
 ---
-
-
 
 ## 🚀 Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
 
 #### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+Build a modern SQL Server–based data warehouse that consolidates sales data from multiple sources to support analytical reporting and business insights.
 
 #### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+- **Data Sources**: ERP and CRM data provided as CSV files.
+- **Data Quality**: Identification and resolution of data quality issues before analysis.
+- **Integration**: Unified data model combining multiple source systems.
+- **Scope**: Analysis based on the latest available data; historical tracking is out of scope.
+- **Documentation**: Clear and structured documentation to support analytics and business users.
 
 ---
 
 ### BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
-Develop SQL-based analytics to deliver detailed insights into:
+Develop SQL-driven analytics to gain insights into:
 - **Customer Behavior**
 - **Product Performance**
 - **Sales Trends**
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+These analytics provide key metrics to support strategic and operational decision-making.
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
+For detailed requirements, refer to [docs/requirements.md](docs/requirements.md).
+
+---
 
 ## 📂 Repository Structure
 ```
